@@ -1,0 +1,53 @@
+@import "variables/constants";
+@import "mixins/media-query";
+
+:root {
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $screen-size, $font-size in $type-scale {
+    @if $screen-size == small {
+      @each $size, $value in $font-size {
+        --fs-#{$size}: #{$value};
+      }
+    } @else {
+      @include mq(mobile) {
+        @each $size, $value in $font-size {
+          --fs-#{$size}: #{$value};
+        }
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^="col-"] {
+  flex-basis: 100%;
+}
+
+@include mq(mobile) {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      flex: 0 0 (100% / ($columns / $i));
+    }
+
+    .col-offset-#{$i} {
+      margin-left: 100% / (($columns / $i));
+    }
+  }
+}
+
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    .text-#{$color}-#{$shade} {
+      color: #{$value};
+    }
+  }
+}

@@ -1,0 +1,116 @@
+:root {
+  --clr-primary-100: #e6f5ff;
+  --clr-primary-200: #99d8ff;
+  --clr-primary-300: #4dbbff;
+  --clr-primary-400: #009dff;
+  --clr-primary-500: #005e99;
+  --clr-secondary-100: #ffe8e6;
+  --clr-secondary-200: #ffa599;
+  --clr-secondary-300: #ff614d;
+  --clr-secondary-400: #ff1e00;
+  --clr-secondary-500: #991200;
+  --clr-tertiary-100: #0fe3ff;
+  --clr-tertiary-200: #99f3ff;
+  --clr-tertiary-300: #4deaff;
+  --clr-tertiary-400: #00e1ff;
+  --clr-tertiary-500: #008799;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.563rem;
+  --fs-600: 1.953rem;
+  --fs-700: 2.441rem;
+  --fs-800: 3.052rem; }
+  @media only screen and (min-width: 37.5em) {
+    :root {
+      --fs-300: 1rem;
+      --fs-400: 1.425rem;
+      --fs-500: 2rem;
+      --fs-600: 2.827rem;
+      --fs-700: 4rem;
+      --fs-800: 5.653rem; } }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+[class^="col-"] {
+  flex-basis: 100%; }
+
+@media only screen and (min-width: 37.5em) {
+  .col-1 {
+    flex: 0 0 12.5%; }
+  .col-offset-1 {
+    margin-left: 12.5%; }
+  .col-2 {
+    flex: 0 0 25%; }
+  .col-offset-2 {
+    margin-left: 25%; }
+  .col-3 {
+    flex: 0 0 37.5%; }
+  .col-offset-3 {
+    margin-left: 37.5%; }
+  .col-4 {
+    flex: 0 0 50%; }
+  .col-offset-4 {
+    margin-left: 50%; }
+  .col-5 {
+    flex: 0 0 62.5%; }
+  .col-offset-5 {
+    margin-left: 62.5%; }
+  .col-6 {
+    flex: 0 0 75%; }
+  .col-offset-6 {
+    margin-left: 75%; }
+  .col-7 {
+    flex: 0 0 87.5%; }
+  .col-offset-7 {
+    margin-left: 87.5%; }
+  .col-8 {
+    flex: 0 0 100%; }
+  .col-offset-8 {
+    margin-left: 100%; } }
+
+.text-primary-100 {
+  color: #e6f5ff; }
+
+.text-primary-200 {
+  color: #99d8ff; }
+
+.text-primary-300 {
+  color: #4dbbff; }
+
+.text-primary-400 {
+  color: #009dff; }
+
+.text-primary-500 {
+  color: #005e99; }
+
+.text-secondary-100 {
+  color: #ffe8e6; }
+
+.text-secondary-200 {
+  color: #ffa599; }
+
+.text-secondary-300 {
+  color: #ff614d; }
+
+.text-secondary-400 {
+  color: #ff1e00; }
+
+.text-secondary-500 {
+  color: #991200; }
+
+.text-tertiary-100 {
+  color: #0fe3ff; }
+
+.text-tertiary-200 {
+  color: #99f3ff; }
+
+.text-tertiary-300 {
+  color: #4deaff; }
+
+.text-tertiary-400 {
+  color: #00e1ff; }
+
+.text-tertiary-500 {
+  color: #008799; }
